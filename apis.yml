@@ -1,8 +1,24 @@
 aid: citadel-securities
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/citadel-securities.png
 name: Citadel Securities
-description: 'Citadel Securities is a company surfaced as a portfolio company of paradigm and added to
-  the API Evangelist network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Citadel Securities is one of the world''s leading market makers and electronic trading
+  firms, providing liquidity and price discovery across equities, options, exchange-traded funds, fixed
+  income, currencies, and commodities for institutional and retail investors globally. Founded in 2002
+  by Ken Griffin, the firm operates a high-performance, technology-driven trading platform. It is a
+  privately held financial-services company and does not publish a public developer API or developer
+  portal; this profile tracks its identity and public infrastructure posture within the API Evangelist
+  network.'
 url: https://raw.githubusercontent.com/api-evangelist/citadel-securities/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Fintech
+- Financial Services
+- Market Maker
+- Electronic Trading
+- Liquidity
+- Capital Markets
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +44,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/citadel-securities-domain-security.yml
 - type: Website
   url: https://www.citadelsecurities.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
