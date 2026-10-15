@@ -1,0 +1,70 @@
+edges:
+- partner_name: ISO 10383 (MIC)
+  partner: null
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv
+  source: mic
+  category: registered trading venues and market segments
+  contract_reference:
+    register: ISO 10383 Market Identifier Codes (ISO 20022 registration authority)
+    spec_file: null
+    standard: ISO 10383
+    role: venue operator
+    matched_domain: citadelsecurities.com
+    matched_by: domain:citadelsecurities.com
+    categories:
+    - NSPD
+    - SINT
+    operating_mics:
+    - CCEU
+    - CDED
+    - CSEC
+    - CSGI
+    - EUCC
+    mics:
+    - mic: CSGI
+      operating_mic: CSGI
+      segment: OPRT
+      market: CITADEL SECURITIES FI - EUROPE
+      category: SINT
+      legal_name: ''
+      country: IE
+    - mic: EUCC
+      operating_mic: EUCC
+      segment: OPRT
+      market: CITADEL CONNECT EUROPE - EU
+      category: SINT
+      legal_name: CITADEL SECURITIES GCS (IRELAND) LIMITED
+      country: IE
+    - mic: CSEC
+      operating_mic: CSEC
+      segment: OPRT
+      market: CITADEL SECURITIES FI
+      category: SINT
+      legal_name: ''
+      country: GB
+    - mic: CCEU
+      operating_mic: CCEU
+      segment: OPRT
+      market: CITADEL CONNECT EUROPE - UK
+      category: SINT
+      legal_name: CITADEL SECURITIES (EUROPE) LIMITED
+      country: GB
+    - mic: CDED
+      operating_mic: CDED
+      segment: OPRT
+      market: CITADEL SECURITIES
+      category: NSPD
+      legal_name: ''
+      country: US
+    detected_by: sweep-capital-markets.py
+    detected: '2026-10-15'
+  detected_by: sweep-capital-markets.py
+  first_seen: '2026-10-15'
+generated: '2026-10-15'
+method: searched
+checked:
+- https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv
